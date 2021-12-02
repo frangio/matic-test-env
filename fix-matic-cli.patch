@@ -1,0 +1,11 @@
+@@ -69,6 +69,10 @@ export default class Config {
+   }
+ 
+   async loadAccounts() {
++    if (this.privateKey) {
++      this.accounts.push(getAccountFromPrivateKey(this.privateKey))
++    }
++
+     if (!this.privateKey || !this.keystorePassword) {
+       const keystoreDetails = await getKeystoreDetails(this)
+       this.accounts.push(getAccountFromPrivateKey(keystoreDetails.privateKey))

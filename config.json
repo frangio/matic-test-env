@@ -1,0 +1,15 @@
+{
+  "borChainId": "15001",
+  "heimdallChainId": "heimdall-15001",
+  "privateKey": "<REDACTED>",
+  "keystorePassword": "a",
+  "accounts": [
+    {
+      "address": "0x6354f8c2d93c832Fe97E42433D6455022140b23e",
+      "privateKey": "<REDACTED>"
+    }
+  ],
+  "borBranch": "v0.2.5",
+  "heimdallBranch": "v0.2.1-mumbai",
+  "contractsBranch": "v0.3.0-backport"
+}
